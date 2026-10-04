@@ -1,0 +1,10 @@
+global-exclude *
+include MANIFEST.in pyproject.toml README.md environment.yml
+include .gitignore .pre-commit-config.yaml
+include code/fastmri_brain.py
+include docs/dataset.md
+include annotations/README.md
+include annotations/brain.csv annotations/brain_file_list.csv
+include annotations/knee.csv annotations/knee_file_list.csv
+recursive-include src/fastmri_preprocess *.py
+include tests/conftest.py tests/test_*.py

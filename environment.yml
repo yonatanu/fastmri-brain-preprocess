@@ -1,0 +1,23 @@
+name: fastmri-preprocess
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - pyarrow
+  - h5py
+  - matplotlib
+  - pytest
+  - pre-commit
+  - black
+  - isort
+  - flake8
+  - pip:
+      - torch
+      - sigpy
+      - einops
+      - cupy-cuda12x
+      - -e .
